@@ -78,8 +78,8 @@ main {
 
 main p {
   font-size: 1.2rem;
-  max-width: 600px;
-  text-align: center;
+  max-width: 800px; /* more room for text */
+  text-align: left;
   margin-bottom: 2rem;
 }
 
@@ -159,28 +159,39 @@ main p {
 /* Intro Container Styles */
 .intro-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2em;
-  max-width: 1000px;
+  padding: 2rem 2rem 2rem 3rem; /* Slight left padding (~2 inches) */
+  max-width: 1400px;  /* increased from 1000px */
   margin: 0 auto;
+  gap: 3rem;
 }
 
 .intro-text {
-  flex: 1 1 55%;
+  flex: 1 1 60%;
   text-align: left;
-  padding-right: 1em;
+  padding-right: 2rem;
+}
+
+.home-name {
+  font-size: 3.8rem;  /* made bigger */
+  font-weight: 900;
+  color: #ffffff;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
 .intro-image {
-  flex: 1 1 40%;
-  text-align: center;
+  flex: 1 1 35%;
+  text-align: right;
 }
 
 .intro-image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
   height: auto;
   object-fit: cover;
   border-radius: 50% / 40%;
@@ -198,3 +209,7 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+
+
+
